@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.*;
 
 /**
  * A fix-sized array of students
@@ -101,7 +102,19 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void add(Student student, int index) {
-		// Add your implementation here
+                int l=students.length;
+		if(student==null||index<0||index>=l)
+                  { throw new IllegalArgumentException();}
+		else
+                {
+                  for(int i=l;i>index;i--)
+                   {
+                    students[i]=students[i-1];
+                     }
+                  students[index]=student;
+                  students[l+1]=null;
+                 }
+// Add your implementation here
 	}
 
 	@Override
@@ -243,7 +256,12 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public int getCurrentAgeByDate(int indexOfStudent) {
-		// Add your implementation here
+		
+              /* if(indexOfStudent==0)
+                 throw new IllegalArgumentException();// Add your implementation here
+                long ams=new Date.getTime()-students[indexOfStudent].getTime();
+                Date age=new Date(ams);
+                int actage=age.getYear();*/
 		return 0;
 	}
 
