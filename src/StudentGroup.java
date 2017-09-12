@@ -112,7 +112,7 @@ public class StudentGroup implements StudentArrayOperation {
                     students[i+1]=students[i];
                      }
                   students[index]=student;
-                  students[l+1]=null;
+                  //students[l+1]=null;
                  }
 // Add your implementation here
 	}
