@@ -79,7 +79,7 @@ public class StudentGroup implements StudentArrayOperation {
           {
            for(int i=l;i>0;i--)
            {
-            students[i]=students[i-1];
+            students[i+1]=students[i];
            }
           students[0]=student;
            }
