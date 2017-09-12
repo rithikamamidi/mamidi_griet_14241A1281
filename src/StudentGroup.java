@@ -263,7 +263,7 @@ public class StudentGroup implements StudentArrayOperation {
                     Student[] students1=new Student[l];
                  for(int i=0;i<l;i++)
                  {
-                   if(students[i].getAvgMark()>maxavg)
+                   if((students[i].getAvgMark())>maxavg)
                    {
                      maxavg=students[i].getAvgMark();
                     }
@@ -271,7 +271,7 @@ public class StudentGroup implements StudentArrayOperation {
                 int k=0;
                 for(int j=0;j<l;j++)
                 {
-                if(students[j].getAvgMark()==maxavg)
+                if((students[j].getAvgMark())==maxavg)
                 {
                  students1[k]=students[j];
                  k++;
